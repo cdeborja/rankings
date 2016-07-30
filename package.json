@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/cdeborja/rankings/issues"
   },
-  "homepage": "https://github.com/cdeborja/rankings#readme"
+  "homepage": "https://github.com/cdeborja/rankings#readme",
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "request": "^2.74.0"
+  }
 }

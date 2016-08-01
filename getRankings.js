@@ -21,6 +21,10 @@ function render (data) {
   } else if (parsedData.country === "US") {
     parsedData.country = "United States";
   }
+
+  if (parsedData.realname === null) {
+    parsedData.realname = "N/A";
+  }
   var info = {
     'name': parsedData.name,
     'realName': parsedData.realname,

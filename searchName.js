@@ -7,8 +7,9 @@ module.exports = function searchName (req, res) {
       //send takes a string as an argument
       parsedData = JSON.parse(data);
       var playerNames = [];
+      // only takes first 10 max responses
       for (var i = 0; i < 10 && i < parsedData.length; i++) {
-        playerNames.push(parsedData[i].name);
+        playerNames.push([parsedData[i].name, parsedData[i].realname]);
       }
       res.send(playerNames);
     }

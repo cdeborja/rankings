@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   input.addEventListener("keyup", function (e) {
     if (this.value.length > 2) {
       searchName(this.value);
+    } else {
+      document.getElementsByClassName("autocomplete")[0].innerHTML = "";
     }
   });
 });
@@ -23,6 +25,10 @@ function searchName(query) {
   xhr.onload = function() {
     if (xhr.status === 200) {
       nameList = JSON.parse(this.response);
+      document.getElementsByClassName("autocomplete")[0].innerHTML = "";
+      for (var i = 0; i < nameList.length; i++) {
+        document.getElementsByClassName("autocomplete")[0].innerHTML += ("<li>" + nameList[i][0] + "</li>");
+      }
     }
     else {
       alert('Request failed.  Returned status of ' + xhr.status);

@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var getRankings = require('./getRankings');
 var landingPage = require('./landingPage');
+var searchName = require('./searchName');
 var readFile = require('fs').readFileSync;
 
 app.get('/css/app.css', function (req, res) {
@@ -20,6 +21,10 @@ app.get('/', function (req, res) {
 
 app.get('/name/:name', function (req, res) {
   getRankings(req, res);
+});
+
+app.get('/search/:name', function (req, res) {
+  searchName(req, res);
 });
 
 app.listen(3000, function () {

@@ -2,9 +2,23 @@
 <link rel="stylesheet" href="/css/app.css" media="screen" type="text/css" charset="utf-8"></link>
 <script type="text/javascript" src="/index.js"> </script>
 </head>
-
-<p>
-  {{name}}
-  <br>
-  {{game}}
-</p>
+<body>
+  <div id="search">
+    <input class="user" type="text" name="name" value="">
+    <div class="searchButton" onclick="handleClick()" name="button">GO</div>
+  </div>
+  <div class="playerData">
+    <p>
+      Player name: {{name}}
+    </p>
+    <p>
+      Real name: {{realName}}
+    </p>
+    <p>
+      Country: {{country}}
+    </p>
+    <p>
+      Main Game: {{mainGame}}
+    </p>
+  </div>
+</body>

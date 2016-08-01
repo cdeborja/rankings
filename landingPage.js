@@ -1,8 +1,10 @@
 var readFile = require('fs').readFileSync;
 var handlebars = require('handlebars');
+var request = require('request');
 
 module.exports = function landingPage (req, res) {
   console.log("main page");
+
   res.send(render());
 };
 

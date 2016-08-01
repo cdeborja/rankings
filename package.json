@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/cdeborja/rankings#readme",
   "dependencies": {
+    "d3": "^4.2.0",
     "handlebars": "^4.0.5",
     "request": "^2.74.0"
   }

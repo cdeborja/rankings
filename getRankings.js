@@ -16,9 +16,17 @@ function render (data) {
   var source = readFile("./playerInfo.html", "UTF8");
   var template = handlebars.compile(source);
 
+  if (parsedData.country === "JP") {
+    parsedData.country = "Japan";
+  } else if (parsedData.country === "US") {
+    parsedData.country = "United States";
+  }
   var info = {
     'name': parsedData.name,
-    'game': parsedData.mainGame
+    'realName': parsedData.realname,
+    'country': parsedData.country,
+    'mainGame': parsedData.mainGame,
+    'allData': data
   };
 
   return template(info);

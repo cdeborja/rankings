@@ -32,13 +32,14 @@ ul {
 
 /* --- Main code --- */
 
-p {
-  color: black;
+body {
   font-family: sans-serif;
+  color: black;
 }
 
 h1 {
-  font-family: sans-serif;
+  font-size: 36px;
+  margin: 10px 0;
   text-align: center;
 }
 
@@ -55,6 +56,12 @@ h1 {
   width: 200px;
   margin: 0 auto;
   float: left;
+}
+
+.player {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid black;
 }
 
 .searchButton {
@@ -91,5 +98,24 @@ p:first-child {
 }
 
 .autocomplete > li {
+  margin-top: -1px;
   border: 1px solid black;
+  padding: 3px 5px;
+  background: white;
+}
+
+.autocomplete > li:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.autocomplete > li:first-child {
+  font-weight: bold;
+}
+
+.autocomplete > li:first-child:hover {
+  color: black;
+  background: white;
+  cursor: inherit;
 }

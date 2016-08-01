@@ -1,13 +1,13 @@
 
 function handleClick () {
-  var el = document.getElementsByClassName("user")[0].value;
+  var el = document.getElementsByClassName("player")[0].value;
   window.location = "/name/" + el;
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
   console.log('DOM Fully Loaded');
 
-  var input = document.getElementsByClassName("user")[0];
+  var input = document.getElementsByClassName("player")[0];
   var nameList, timer;
 
   input.addEventListener("keyup", function (e) {
@@ -17,6 +17,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
       document.getElementsByClassName("autocomplete")[0].innerHTML = "";
     }
   });
+
+  var clickedItem = document.getElementsByClassName('autocomplete')[0];
+  clickedItem.addEventListener('click', function (e) {
+    var endOfName, playerName;
+
+    endOfName = e.target.innerHTML.indexOf("(") - 1;
+    playerName = e.target.innerHTML.slice(0, endOfName);
+    document.getElementsByClassName("player")[0].value = playerName;
+  });
+
 });
 
 function searchName(query) {
@@ -40,3 +50,7 @@ function searchName(query) {
   };
   xhr.send();
 }
+
+document.addEventListener("click", function () {
+  document.getElementsByClassName("autocomplete")[0].innerHTML = "";
+});

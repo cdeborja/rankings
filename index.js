@@ -20,11 +20,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   var autocompleteList = document.getElementsByClassName('autocomplete')[0];
   autocompleteList.addEventListener('click', function (e) {
-    var endOfName, playerName;
+    if (e.target.className !== 'header') {
+      var endOfName, playerName;
 
-    endOfName = e.target.innerHTML.indexOf("(") - 1;
-    playerName = e.target.innerHTML.slice(0, endOfName);
-    document.getElementsByClassName("player")[0].value = playerName;
+      endOfName = e.target.innerHTML.indexOf("(") - 1;
+      playerName = e.target.innerHTML.slice(0, endOfName);
+      document.getElementsByClassName("player")[0].value = playerName;
+    }
   });
 
 });
@@ -35,7 +37,7 @@ function searchName(query) {
   xhr.onload = function() {
     if (xhr.status === 200) {
       nameList = JSON.parse(this.response);
-      document.getElementsByClassName("autocomplete")[0].innerHTML = "<li>Player Name (Real Name)</li>";
+      document.getElementsByClassName("autocomplete")[0].innerHTML = "<li class='header'>Player Name (Real Name)</li>";
       for (var i = 0; i < nameList.length; i++) {
         if (nameList[i][1] === null) {
           nameList[i][1] = "N/A";

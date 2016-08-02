@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   });
 
-  var clickedItem = document.getElementsByClassName('autocomplete')[0];
-  clickedItem.addEventListener('click', function (e) {
+  var autocompleteList = document.getElementsByClassName('autocomplete')[0];
+  autocompleteList.addEventListener('click', function (e) {
     var endOfName, playerName;
 
     endOfName = e.target.innerHTML.indexOf("(") - 1;

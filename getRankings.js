@@ -20,16 +20,24 @@ function render (data) {
     parsedData.country = "Japan";
   } else if (parsedData.country === "US") {
     parsedData.country = "United States";
+  } else if (parsedData.country === "SE") {
+    parsedData.country = "Sweden";
   }
 
   if (parsedData.realname === null) {
     parsedData.realname = "N/A";
   }
+
   var info = {
     'name': parsedData.name,
     'realName': parsedData.realname,
     'country': parsedData.country,
     'mainGame': parsedData.mainGame,
+    'twitter': parsedData.twitter,
+    'teams': parsedData.teams,
+    //rankings is not an array, it's an object pointing to other objects
+    'rankings': parsedData.rankings.AE2012.rank,
+    'resultsLength': parsedData.results.length,
     'allData': data
   };
 

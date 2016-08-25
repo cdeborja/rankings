@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+
 var getRankings = require('./getRankings');
 var landingPage = require('./landingPage');
 var searchName = require('./searchName');
@@ -14,6 +15,8 @@ app.get('/index.js', function (req, res) {
   console.log("loaded index.js");
   res.send(readFile("./index.js", "UTF8"));
 });
+
+// paths created
 
 app.get('/', function (req, res) {
   landingPage(req, res);

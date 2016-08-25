@@ -34,7 +34,7 @@ function render (data) {
   for (var i = 0; i < parsedData.results.length; i++) {
     tournamentList.push(parsedData.results[i].tournamentname);
   }
-  
+
   var info = {
     'name': parsedData.name,
     'realName': parsedData.realname,

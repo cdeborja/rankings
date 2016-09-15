@@ -46,27 +46,54 @@ h1 {
 .answer-box {
   position: relative;
   margin: 10px auto;
-  width: 400px;
+  max-width: 600px;
+  width: 100%;
   border: 1px solid red;
 }
 
 .possible-answer {
-  width: 42%;
+  width: 47%;
   height: 100px;
   text-align: center;
   vertical-align: middle;
   border: 1px solid blue;
   margin: 5px;
-  padding: 10px;
   float: left;
+  border-radius: 5px;
   display: table;
 }
 
 .possible-answer:hover {
   cursor: pointer;
 }
+
 .possible-answer p {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+}
+
+.answer {
+  margin: 0 auto;
+  border: 1px solid green;
+  max-width: 800px;
+  width: 100%;
+}
+
+.correct {
+  background: green;
+  color: #FFFFFF;
+}
+
+.wrong {
+  background: red;
+  color: #FFFFFF;
+}
+
+.refresh {
+  border: 1px solid pink;
+  margin: 10px auto;
+  padding: 10px 20px;
+  text-align: center;
+  width: 400px;
 }

@@ -7,20 +7,23 @@
   <div>
     <ul class="answer-box group">
       <li class="possible-answer">
-        <p id=0 onclick="handleClick()">{{option1}}</p>
+        <p id=0 onclick="checkChoice()">{{option1}}</p>
       </li>
       <li class="possible-answer">
-        <p id=1 onclick="handleClick()">{{option2}}</p>
+        <p id=1 onclick="checkChoice()">{{option2}}</p>
       </li>
       <li class="possible-answer">
-        <p id=2 onclick="handleClick()">{{option3}}</p>
+        <p id=2 onclick="checkChoice()">{{option3}}</p>
       </li>
       <li class="possible-answer">
-        <p id=3 onclick="handleClick()">{{option4}}</p>
+        <p id=3 onclick="checkChoice()">{{option4}}</p>
       </li>
     </ul>
     <div id={{selectedId}} class="answer">
       {{selectedData}}
+    </div>
+    <div class="refresh">
+      Refresh?
     </div>
   </div>
 </body>

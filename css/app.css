@@ -33,6 +33,7 @@ ul {
 /* --- Main code --- */
 
 body {
+  background: #f8f8f8;
   font-family: sans-serif;
   color: black;
 }
@@ -48,52 +49,126 @@ h1 {
   margin: 10px auto;
   max-width: 600px;
   width: 100%;
-  border: 1px solid red;
 }
 
-.possible-answer {
+.answer-box > .possible-answer:nth-child(2n) {
+  position: relative;
   width: 47%;
   height: 100px;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid blue;
   margin: 5px;
+  border-radius: 5px 0 0 5px;
   float: left;
-  border-radius: 5px;
   display: table;
+  background: #71aee6;
+  color: #ffffff;
+}
+.answer-box > .possible-answer:nth-child(2n+1) {
+  position: relative;
+  width: 47%;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 5px;
+  border-radius:0 5px 5px 0;
+  float: left;
+  display: table;
+  background: #71aee6;
+  color: #ffffff;
 }
 
-.possible-answer:hover {
+.possible-answer > p:hover {
   cursor: pointer;
 }
 
-.possible-answer p {
+.possible-answer:nth-child(2n) p{
+  border-radius: 5px 0 0 5px;;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.possible-answer:nth-child(2n+1) p{
+  border-radius: 0 5px 5px 0;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
 
 .answer {
+  color: #FFFFFF;
   margin: 0 auto;
-  border: 1px solid green;
+  border-radius: 5px;
   max-width: 800px;
   width: 100%;
+  padding: 20px;
+  background: #5383af;
 }
 
 .correct {
-  background: green;
-  color: #FFFFFF;
+  background: #1ec51e;
 }
 
 .wrong {
   background: red;
+}
+
+.disable-wiki {
+  background: grey;
+  cursor: no-drop;
+}
+
+.enable-wiki {
+  color: black;
+  background: #FFFFFF;
+}
+
+.enable-wiki:hover {
+  cursor: pointer;
+}
+
+.navigation {
+  margin: 10px auto;
+  width: 480px;
+}
+
+.nav-button {
+  float: left;
+  background: #71aee6;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  width: 180px;
   color: #FFFFFF;
 }
 
-.refresh {
-  border: 1px solid pink;
-  margin: 10px auto;
-  padding: 10px 20px;
+.nav-button:hover {
+  cursor: pointer;
+}
+
+.possible-answer:nth-child(2n+1) .redirect-to-wiki {
+  height: 100px;
+  border-radius: 5px 0 0 5px;
+  line-height: 100px;
+  border-right: 0;
+  position: absolute;
+  left: 1;
+  top: 50%;
+  padding: 0 10px;
+  transform: translateY(-50%) translateX(-100%);
+}
+
+.possible-answer:nth-child(2n) .redirect-to-wiki {
+  height: 100px;
+  border-radius: 0 5px 5px 0;
+  line-height: 100px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  border-left: 0;
+  padding: 0 10px;
   text-align: center;
-  width: 400px;
+  transform: translateY(-50%) translateX(100%);
 }

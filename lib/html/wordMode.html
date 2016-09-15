@@ -8,22 +8,31 @@
     <ul class="answer-box group">
       <li class="possible-answer">
         <p id=0 onclick="checkChoice()">{{option1}}</p>
+        <div onclick="goToWiki()"class="redirect-to-wiki disable-wiki">WIKI</div>
       </li>
       <li class="possible-answer">
         <p id=1 onclick="checkChoice()">{{option2}}</p>
+        <div onclick="goToWiki()"class="redirect-to-wiki disable-wiki">WIKI</div>
       </li>
       <li class="possible-answer">
         <p id=2 onclick="checkChoice()">{{option3}}</p>
+        <div onclick="goToWiki()"class="redirect-to-wiki disable-wiki">WIKI</div>
       </li>
       <li class="possible-answer">
         <p id=3 onclick="checkChoice()">{{option4}}</p>
+        <div onclick="goToWiki()"class="redirect-to-wiki disable-wiki">WIKI</div>
       </li>
     </ul>
     <div id={{selectedId}} class="answer">
       {{selectedData}}
     </div>
-    <div class="refresh">
-      Refresh?
+    <div class="navigation group">
+      <div onclick="refresh()" class="nav-button">
+        Refresh?
+      </div>
+      <div onclick="goToMain()" class="nav-button">
+        Go to main
+      </div>
     </div>
   </div>
 </body>

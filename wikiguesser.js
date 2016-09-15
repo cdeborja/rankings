@@ -6,6 +6,8 @@ var getMainPage = require('./lib/js/getMainPage.js');
 var getWordMode = require('./lib/js/getWordMode.js');
 var getDefinitionMode = require('./lib/js/getDefinitionMode.js');
 
+app.set('port', (process.env.PORT || 3000));
+
 // loads necessary css and js
 app.get('/css/app.css', function (req, res) {
   console.log("loaded app.css");
@@ -35,6 +37,6 @@ app.get('/definitionMode', function (req, res) {
   getDefinitionMode(req, res);
 });
 
-app.listen(3000, function () {
+app.listen(app.get('port'), function () {
   console.log('App listening on port 3000!');
 });

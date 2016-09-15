@@ -2,9 +2,9 @@
   "name": "rankings",
   "version": "1.0.0",
   "description": "",
-  "main": "rankings.js",
+  "main": "wikiguess.js",
   "scripts": {
-    "start": "node rankings.js",
+    "start": "node wikiguess.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +19,9 @@
   "homepage": "https://github.com/cdeborja/rankings#readme",
   "dependencies": {
     "d3": "^4.2.0",
+    "express": "^4.14.0",
     "handlebars": "^4.0.5",
-    "request": "^2.74.0"
+    "request": "^2.74.0",
+    "requirejs": "^2.3.1"
   }
 }

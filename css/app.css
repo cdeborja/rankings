@@ -43,79 +43,24 @@ h1 {
   text-align: center;
 }
 
-#search {
-  width: 400px;
-  margin: 0 auto;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 20px;
-  margin-bottom: 20px;
+.answer-box {
+  position: relative;
+  margin: 10px auto;
+  width: 500px;
+  border: 1px solid red;
 }
 
-#input {
-  width: 200px;
-  margin: 0 auto;
+.answer-box > li {
+  width: 40%;
+  height: 40px;
+  /*position: absolute;*/
+  text-align: center;
+  border: 1px solid blue;
+  margin: 5px;
+  padding: 10px;
   float: left;
 }
 
-.player {
-  border-radius: 5px;
-  padding: 5px 10px;
-  border: 1px solid black;
-}
-
-.searchButton {
-  border: 1px black solid;
-  border-radius: 5px;
-  position: inherit;
-  float: right;
-  font-size: 10px;
-  padding: 5px 10px;
-}
-
-.searchButton:hover {
+.answer-box > li:hover {
   cursor: pointer;
-  background: #000000;
-  color: white;
-  border: 1px solid grey;
-}
-
-.playerData {
-  padding: 20px 10px;
-  margin: 0 auto;
-  width: 500px;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-p:first-child {
-  margin: 0;
-  font-size: 40px;
-}
-
-.autocomplete {
-  position: absolute;
-}
-
-.autocomplete > li {
-  margin-top: -1px;
-  border: 1px solid black;
-  padding: 3px 5px;
-  background: white;
-}
-
-.autocomplete > li:hover {
-  color: white;
-  background: black;
-  cursor: pointer;
-}
-
-.autocomplete > li:first-child {
-  font-weight: bold;
-}
-
-.autocomplete > li:first-child:hover {
-  color: black;
-  background: white;
-  cursor: inherit;
 }

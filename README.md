@@ -2,7 +2,7 @@
 
 Side project to test out using express, handlebars, and request
 
-App that utilizes the WikiMedia API (which pulls information from Wikipedia) and has the user guess what the definition of the word is or the word to the definition.
+App that utilizes the WikiMedia API (which pulls information from Wikipedia) and has the user guess what the description of the word is and vice versa.
 
 Technologies Used:
 - Node.js

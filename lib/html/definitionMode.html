@@ -5,14 +5,14 @@
 </head>
 <body>
   <div>
-    <ul class="answer-box group">
+    <div id={{selectedId}} class="answer">
+      {{selectedTitle}}
+    </div>
+    <ul class="group">
       <li id=0 onclick="handleClick()">{{option1}}</li>
       <li id=1 onclick="handleClick()">{{option2}}</li>
       <li id=2 onclick="handleClick()">{{option3}}</li>
       <li id=3 onclick="handleClick()">{{option4}}</li>
     </ul>
-    <div id={{selectedId}} class="answer">
-      {{selectedData}}
-    </div>
   </div>
 </body>

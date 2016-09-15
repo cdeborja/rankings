@@ -2,9 +2,9 @@
   "name": "rankings",
   "version": "1.0.0",
   "description": "",
-  "main": "wikiguess.js",
+  "main": "wikiguesser.js",
   "scripts": {
-    "start": "node wikiguess.js",
+    "start": "node wikiguesser.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

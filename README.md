@@ -1,8 +1,8 @@
-# Competitive Player Information
+# Wiki Guesser
 
 Side project to test out using express, handlebars, and request
 
-Interactive site that allows for queries to find data regarding top Competitive video game players
+App that utilizes the WikiMedia API (which pulls information from Wikipedia) and has the user guess what the definition of the word is or the word to the definition.
 
 Technologies Used:
 - Node.js
@@ -14,4 +14,4 @@ Technologies Used:
 
 
 APIs Implemented:
-[shoryuken](http://rank.shoryuken.com/api/)
+[WikiMedia](https://www.mediawiki.org/wiki/API:Main_page)

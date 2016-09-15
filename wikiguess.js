@@ -4,7 +4,7 @@ var readFile = require('fs').readFileSync;
 
 var getMainPage = require('./lib/js/getMainPage.js');
 var getWordMode = require('./lib/js/getWordMode.js');
-var getDefinitionMode = require('./lib/js/definitionMode.js');
+var getDefinitionMode = require('./lib/js/getDefinitionMode.js');
 
 // loads necessary css and js
 app.get('/css/app.css', function (req, res) {

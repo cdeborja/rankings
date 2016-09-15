@@ -46,21 +46,27 @@ h1 {
 .answer-box {
   position: relative;
   margin: 10px auto;
-  width: 500px;
+  width: 400px;
   border: 1px solid red;
 }
 
-.answer-box > li {
-  width: 40%;
-  height: 40px;
-  /*position: absolute;*/
+.possible-answer {
+  width: 42%;
+  height: 100px;
   text-align: center;
+  vertical-align: middle;
   border: 1px solid blue;
   margin: 5px;
   padding: 10px;
   float: left;
+  display: table;
 }
 
-.answer-box > li:hover {
+.possible-answer:hover {
   cursor: pointer;
+}
+.possible-answer p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }

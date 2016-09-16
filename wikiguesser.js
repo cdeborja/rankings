@@ -25,8 +25,8 @@ app.get('/images/profile.png', function (req, res) {
   res.send(readFile("./images/profile.png"));
 });
 
-app.get('/images/Github.png', function (req, res) {
-  res.send(readFile("./images/Github.png"));
+app.get('/images/GitHub.png', function (req, res) {
+  res.send(readFile("./images/GitHub.png"));
 });
 
 app.get('/images/LinkedIn.jpg', function (req, res) {

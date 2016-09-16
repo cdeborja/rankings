@@ -21,6 +21,18 @@ app.get('/lib/js/mainPage.js', function (req, res) {
   res.send(readFile("./lib/js/mainPage.js", "UTF8"));
 });
 
+app.get('/images/profile.png', function (req, res) {
+  res.send(readFile("./images/profile.png"));
+});
+
+app.get('/images/Github.png', function (req, res) {
+  res.send(readFile("./images/Github.png"));
+});
+
+app.get('/images/LinkedIn.jpg', function (req, res) {
+  res.send(readFile("./images/LinkedIn.jpg"));
+});
+
 // paths created
 
 app.get('/', function (req, res) {

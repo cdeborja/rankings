@@ -5,12 +5,23 @@
 </head>
 
 <body>
-  <h1>Hello, welcome to Wiki Guesser</h1>
-  <p> In Word Choices, you match the give short description from a list of 4 choices</p>
-  <p> In Description Choices, you match the given word to one of the 4 descriptions</p>
-  <p> If you're interested in learning more about the choices, feel free to click the wiki redirect</p>
+  <h1>Welcome to Wiki Guesser</h1>
+  <div class="description-box">
+    <p> In Word Choices, you match the given short description from a list of 4 choices</p>
+    <p> In Description Choices, you match the given word to one of the 4 descriptions</p>
+    <p> If you're interested in learning more about the choices, feel free to click the wiki redirect after selecting a choice</p>
+  </div>
   <div id="game-select" class="group">
     <div class="nav-button" onclick="goToMultipleWord()">Play Word Choices</div>
     <div class="nav-button" onclick="goToMultipleDescription()">Play Definition Choices</div>
+  </div>
+  <div class="author-wrapper">
+    <div>Created by</div>
+    <div>Christopher De Borja</div>
+    <ul class="group author-navigation">
+      <li><a href="http://www.christopherdeborja.com"><img src="../../images/profile.png"/></a></li>
+      <li><a href="http://www.linkedin.com/in/christopherdeborja"><img src="../../images/LinkedIn.jpg"/></a></li>
+      <li><a href="http://www.github.com/cdeborja"><img src="../../images/GitHub.png"/></a></li>
+    </ul>
   </div>
 </body>

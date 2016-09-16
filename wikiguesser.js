@@ -4,13 +4,12 @@ var readFile = require('fs').readFileSync;
 
 var getMainPage = require('./lib/js/getMainPage.js');
 var getWordMode = require('./lib/js/getWordMode.js');
-var getDefinitionMode = require('./lib/js/getDefinitionMode.js');
+var getDescriptionMode = require('./lib/js/getDescriptionMode.js');
 
 app.set('port', (process.env.PORT || 3000));
 
 // loads necessary css and js
 app.get('/css/app.css', function (req, res) {
-  console.log("loaded app.css");
   res.send(readFile("./css/app.css", "UTF8"));
 });
 
@@ -19,7 +18,6 @@ app.get('/lib/js/gameFuncs.js', function (req, res) {
 });
 
 app.get('/lib/js/mainPage.js', function (req, res) {
-  console.log("loaded main page js");
   res.send(readFile("./lib/js/mainPage.js", "UTF8"));
 });
 
@@ -33,8 +31,8 @@ app.get('/wordMode', function (req, res) {
   getWordMode(req, res);
 });
 
-app.get('/definitionMode', function (req, res) {
-  getDefinitionMode(req, res);
+app.get('/descriptionMode', function (req, res) {
+  getDescriptionMode(req, res);
 });
 
 app.listen(app.get('port'), function () {

@@ -98,7 +98,7 @@ h1 {
 
 .answer {
   color: #FFFFFF;
-  margin: 0 auto;
+  margin: 10px auto;
   border-radius: 5px;
   max-width: 800px;
   width: 100%;
@@ -171,4 +171,13 @@ h1 {
   padding: 0 10px;
   text-align: center;
   transform: translateY(-50%) translateX(100%);
+}
+
+#game-select {
+  margin: 10px auto;
+  width: 460px;
+}
+
+#game-select > div {
+  float: left;
 }

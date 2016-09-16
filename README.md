@@ -4,6 +4,8 @@ Side project to test out using express, handlebars, and request
 
 App that utilizes the WikiMedia API (which pulls information from Wikipedia) and has the user guess what the description of the word is and vice versa.
 
+Why make a small quiz game with Wikipedia? Well because knowledge is power!
+
 Technologies Used:
 - Node.js
 - JavaScript

@@ -12,6 +12,5 @@ Technologies Used:
 - [handlebars](http://handlebarsjs.com/)
 - [request.js](https://www.npmjs.com/package/request)
 
-
 APIs Implemented:
 [WikiMedia](https://www.mediawiki.org/wiki/API:Main_page)

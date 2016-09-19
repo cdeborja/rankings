@@ -44,6 +44,7 @@ h1 {
   text-align: center;
 }
 
+/* --- Answer choice CSS --- */
 .answer-box {
   position: relative;
   margin: 10px auto;
@@ -97,15 +98,16 @@ h1 {
   cursor: pointer;
 }
 
-.possible-answer:nth-child(2n) p{
-  border-radius: 5px 0 0 5px;;
+.possible-answer:nth-child(2n+1) p{
+  border-radius: 0 5px 5px 0;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
 
-.possible-answer:nth-child(2n+1) p{
-  border-radius: 0 5px 5px 0;
+.possible-answer:nth-child(2n) p,
+.answer-box-word .possible-answer p {
+  border-radius: 5px 0 0 5px;;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -130,13 +132,15 @@ h1 {
   background: red;
 }
 
+/* -- WIKI CSS --*/
+
 .disable-wiki {
   background: grey;
   cursor: no-drop;
 }
 
 .enable-wiki {
-  color: black;
+  color: #000000;
   background: #FFFFFF;
 }
 
@@ -144,6 +148,7 @@ h1 {
   cursor: pointer;
 }
 
+/* Bottom navigation */
 .navigation {
   margin: 10px auto;
   width: 480px;

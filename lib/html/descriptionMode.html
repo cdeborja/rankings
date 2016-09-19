@@ -8,11 +8,31 @@
     <div id={{selectedId}} class="answer">
       {{selectedTitle}}
     </div>
-    <div class="group">
-      <p id=0 onclick="handleClick()">{{option1}}</p>
-      <p id=1 onclick="handleClick()">{{option2}}</p>
-      <p id=2 onclick="handleClick()">{{option3}}</p>
-      <p id=3 onclick="handleClick()">{{option4}}</p>
+    <ul class="answer-box-word group">
+      <li class="possible-answer">
+        <p id=0 class={{title1}} onclick="checkChoice()">{{option1}}</p>
+        <div onclick="goToWiki()"class="redirect-to-wiki-description disable-wiki">WIKI</div>
+      </li>
+      <li class="possible-answer">
+        <p id=1 class={{title2}} onclick="checkChoice()">{{option2}}</p>
+        <div onclick="goToWiki()"class="redirect-to-wiki-description disable-wiki">WIKI</div>
+      </li>
+      <li class="possible-answer">
+        <p id=2 class={{title3}} onclick="checkChoice()">{{option3}}</p>
+        <div onclick="goToWiki()"class="redirect-to-wiki-description disable-wiki">WIKI</div>
+      </li>
+      <li class="possible-answer">
+        <p id=3 class={{title4}} onclick="checkChoice()">{{option4}}</p>
+        <div onclick="goToWiki()"class="redirect-to-wiki-description disable-wiki">WIKI</div>
+      </li>
+    </ul>
+    <div class="navigation group">
+      <div onclick="refresh()" class="nav-button">
+        Refresh?
+      </div>
+      <div onclick="goToMain()" class="nav-button">
+        Go to main
+      </div>
     </div>
   </div>
 </body>

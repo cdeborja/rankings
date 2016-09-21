@@ -7,7 +7,7 @@ var getMainPage = require('./lib/js/getMainPage.js');
 var getWordMode = require('./lib/js/getWordMode.js');
 var getDescriptionMode = require('./lib/js/getDescriptionMode.js');
 
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (process.env.PORT || 4000));
 
 app.use(favicon(__dirname + '/favicon.ico'));
 
@@ -51,5 +51,5 @@ app.get('/descriptionMode', function (req, res) {
 });
 
 app.listen(app.get('port'), function () {
-  console.log('App listening on port 3000!');
+  console.log('App listening on port 4000!');
 });

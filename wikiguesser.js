@@ -7,7 +7,7 @@ var getMainPage = require('./lib/js/getMainPage.js');
 var getWordMode = require('./lib/js/getWordMode.js');
 var getDescriptionMode = require('./lib/js/getDescriptionMode.js');
 
-app.set('port', (process.env.PORT || 4444));
+app.set('port', (process.env.PORT || 3210));
 
 // serve-favicon is used to display favicon
 // express.static serves all necessary assets
@@ -29,5 +29,5 @@ app.get('/descriptionMode', function (req, res) {
 });
 
 app.listen(app.get('port'), function () {
-  console.log('App listening on port 4444!');
+  console.log('App listening on port 3210!');
 });

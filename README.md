@@ -18,3 +18,10 @@ Technologies Used:
 
 APIs Implemented:
 [WikiMedia](https://www.mediawiki.org/wiki/API:Main_page)
+
+### Known Issues
+- Sometimes answers are not redacted properly since the description may not match the answer/word properly
+
+### Future Goals
+- Keep ongoing score amount
+- Allow choice of category
